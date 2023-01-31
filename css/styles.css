@@ -1,0 +1,156 @@
+* {box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+body {
+    margin: 0px 40px;
+}
+
+header {
+    width:100%;
+    background-color: #F6DE83;
+    float:left;
+    border: 2px #633825 solid;
+}
+
+h1 {
+    color: #483228;
+    font-size: 70px;
+    line-height: 60px;
+    font-style: italic;
+}
+
+h2 {
+    color: #483228;
+    font-size: 40px;
+    text-decoration: overline;
+}
+
+h3, h4 {
+    font-style: italic;
+    font-size: 25px;
+    border-bottom: #F6DE83 4px solid;
+    margin-bottom: 25px;
+}
+
+h3 {
+    padding: 0px 0px 5px 20px;
+}
+
+h4 {
+    padding-bottom: 5px;
+}
+
+h5,label {
+    color: #36623C; 
+    font-size: 20px;
+    font-style: italic;
+    margin: 0px;
+}
+
+.principal {
+    width: 75%;
+    float: left;
+    text-align: center;
+}
+
+.foto {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+nav {
+    background-color: #483228;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    font-size: 20px;
+}
+
+.cuerpoCV, .barraLateral {
+    float: left;
+    min-height: 1050px;
+    font-size: 18px;
+    border-bottom: 2px #633825 solid;
+}
+
+.cuerpoCV {
+    color: #36623C;
+    width: 78%;
+    background-color: #FFF6D4;
+    text-align: justify;
+    padding: 0px 60px;
+    border-left: 2px #633825 solid;
+}
+
+.barraLateral {
+    color: #FFF6D4;
+    width: 22%;
+    background-color: #DAB368;
+    padding: 0px 15px;
+    border-right: 2px #633825 solid;
+}
+
+#botonContactar, #botonFormulario {
+    background-color: #79452C;
+    border-radius: 15px;
+    border: #483228 solid 1px;
+    color:#FCF3CF;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#botonContactar:hover, #botonFormulario:hover { background-color: #483228;}
+
+.centrarListas {
+    text-align: center;
+}
+
+.centrarListas ul {
+    text-align: left;
+	display: inline-block;
+}
+
+ul {
+    list-style-type:circle;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF6D4;
+    padding: 5px;
+}
+a:hover { background-color: #79452C;}
+
+
+#listaHabilidades {
+    columns: 2;
+}
+
+input {
+    width: 100%;
+}
+
+
+figcaption {
+  display:none; 
+  transition: all .5s;
+  color: #36623C;
+}
+
+#ingles:hover > figcaption {
+  display:block;
+  transition: all .5s;
+  }
+
+#aleman:hover > figcaption {
+    display:block;
+    transition: all .5s;
+    }

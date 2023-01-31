@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi proyecto cv</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e0715e746c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <header>
+        <div class ="principal">
+            <div>
+             <h1>HUGHES <br>
+             CARLA VALERIA  </h1>
+            </div>
+
+            <div>
+             <h2>DESARROLLADORA FRONT-END</h2>
+            </div>
+        </div>
+
+        <div class="foto"> 
+            <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Lo sentimos la imagen no se pudo cargar correctamente" height="250" width="250"/>  
+        </div>
+   </header> 
+
+
+
+    <div id="barraNav">
+        <nav>
+            <a href="#perfil"> PERFIL </a>
+            <a href="#experiencia"> EXPERIENCIA </a>
+            <a href="#educacion"> EDUCACIÓN </a>
+            <a href="#habilidades"> HABILIDADES </a>
+        </nav>
+    </div>
+
+    <div class="cuerpoCV">
+        <section id="perfil"> 
+         <h3><i class="fa-solid fa-user"></i> PERFIL</h3>
+         <P> Cortés y entusiasta, estoy interesada en TI y todo en su órbita. Recientemente comencé a sentirme fascinada por la programación web, por ejemplo: desarrollando aplicaciones y construyendo sitios web. Invitada a unirse a una empresa emergente como desarrollador de aplicaciones para usuario, adquirí experiencia trabajando en esta área.</P>
+        </section>
+
+        <section id="experiencia"> 
+            
+            <h3><i class="fa-solid fa-briefcase"></i> EXPERIENCIA LABORAL</h3>
+            <ul>
+                <li> <h5>03/2015 - present, Front-end desarrollador, startup </h5>BudgetMatador, Tallinn, Estonia
+                  <br>
+                    Ayudando voluntariamente a una empresa de nueva creación aún no financiada para desarrollar su producto, con fines de autoeducación. Mi trabajo incluye codificación en Javascript (Backbone, jQuery, Underscore), HTML y CSS.
+                </li>
+                <br>
+                <li><h5>03/2014 - 04/2015, Consultor de servicio al cliente</h5> Arvutitark OÜ, Tallinn, Estonia
+                    <br>
+                    Trabajé como vendedora en una tienda de venta de productos de TI.
+                </li>
+            </ul>
+        </section>
+
+        <section id="educacion"> 
+            <h3><i class="fa-solid fa-graduation-cap"></i> EDUCACIÓN</h3> 
+
+            <ul>
+                <li> <h5>09/2014 - present, Diseño web y gráficos digitales.</h5> Estonian Entrepreneurship University of Applied Sciences, Tallinn, Estonia.
+                  <br>Especialización en: tecnologías web y educación a distáncia
+                </li>
+                <br>
+                <li><h5>09/2009 - 06/2011, Escuela secundaria</h5> Tallinn Technical Gymnasium, Estonia</li>
+            </ul>
+        </section>
+
+        <section id="habilidades"> 
+            <h3><i class="fa-solid fa-laptop-code"></i> HABILIDADES EN PROGRAMACIÓN:</h3> 
+            <ul id="listaHabilidades">
+                <li >JavaScript</li>
+                <li>HTML</li>
+                <li>CSS </li>
+                <li>C++</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+            </ul>
+        </section>
+    </div>
+
+    <aside class="barraLateral">
+
+        <button type="button" id="botonContactar">Contactarme!</button>
+
+        <div id="seccion_formulario" style="display: none;">
+            <h3> Formulario de contacto</h3>
+            <p>Si ud. está interesado en ponerse en contacto conmigo o pactar una entrevista personal, favor de llenar el siguiente formulario</p>
+
+            <form id="formularioContacto" action="" method="get">
+                <label class = "campo">Empresa: </label>
+                <input type="text" name="Empresa" placeholder="Nombre de la empresa o proyecto" required/>
+                <br>
+
+                <label class = "campo">Email: </label>
+                <input type="text" name="Email" placeholder="Mail al que los puedo comunicar" required/>
+                <br>   
+
+                <label class = "campo">Mensaje: </label>
+                <input type="text" id="msjForm" name="Mensaje" />
+                <br>
+                <br>
+                <input type="submit" id= "botonFormulario" value="Enviar!"/>
+            </form>
+        </div>
+
+        <div id="ocultarBarra" style="display: block;">
+
+            <div class="centrarListas">
+             <h4>CONTACTO:</h4>
+            
+                <h5><i class="fa-solid fa-phone"></i> Teléfono:</h5> <p><a title="Llamar!" href="tel: +345578350435">(557) 835-0435</a></p>
+                <h5><i class="fa-solid fa-envelope"></i> Email:</h5> <p><a title="Enviar Email!" href="mailto:carla.hughes@ejemplo.com">carla.hughes@ejemplo.com</a></p>
+                <h5><i class="fa-solid fa-globe"></i> Dirección:</h5> <p>6183 Primavera Colina Rd</p>
+        
+            </div>
+
+
+            <div class="centrarListas">
+                <h4>OTRAS HABILIDADES INFORMÁTICAS:</h4>
+                <ul>
+                    <li>3D Studio Max</li>
+                    <li>Adobe After Effects</li>
+                    <li>Adobe Illustrator </li>
+                    <li>Adobe Photoshop</li>
+                </ul>
+            </div>
+
+            <div class="centrarListas"> 
+                <h4>IDIOMAS:</h4>
+                <ul>
+                    <li>Español nativo</li>
+                    <li id="ingles">Inglés avanzado <figcaption>Nivel C1 - English institute - Año 2020</figcaption></li>
+                    <li id="aleman">Alemán medio <figcaption>Nivel B1 - Institute of idioms - En curso</figcaption></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <script src="js/function.js" > </script>
+
+</body>
+</html>
