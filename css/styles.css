@@ -2,10 +2,9 @@
     font-family: 'Kanit', sans-serif;
 }
 
-
 body {
     margin: 0px 40px;
-}
+} 
 
 header {
     width:100%;
@@ -16,26 +15,28 @@ header {
 
 h1 {
     color: #483228;
-    font-size: 70px;
-    line-height: 60px;
+    font-size: 4.5em;
+    line-height: 0.8em;
     font-style: italic;
 }
 
 h2 {
     color: #483228;
-    font-size: 40px;
+    font-size: 2.4em;
     text-decoration: overline;
+    margin: 0%;
 }
 
 h3, h4 {
     font-style: italic;
-    font-size: 25px;
+    font-size: 1.3em;
     border-bottom: #F6DE83 4px solid;
     margin-bottom: 25px;
 }
 
 h3 {
     padding: 0px 0px 5px 20px;
+    text-align: left;
 }
 
 h4 {
@@ -44,7 +45,7 @@ h4 {
 
 h5,label {
     color: #36623C; 
-    font-size: 20px;
+    font-size: 1.2em;
     font-style: italic;
     margin: 0px;
 }
@@ -59,28 +60,32 @@ h5,label {
     width: 25%;
     float: left;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1em;
 }
 
 
 nav {
     background-color: #483228;
-    padding: 10px;
+    padding: 5px;
     justify-content: space-around;
     display: flex;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .cuerpoCV, .barraLateral {
     float: left;
-    min-height: 1050px;
-    font-size: 18px;
+    font-size: 1.2em;
     border-bottom: 2px #633825 solid;
+}
+
+.contenedor {
+    display: flex;
+    align-items: stretch;
 }
 
 .cuerpoCV {
     color: #36623C;
-    width: 78%;
+    width: 75%;
     background-color: #FFF6D4;
     text-align: justify;
     padding: 0px 60px;
@@ -89,22 +94,25 @@ nav {
 
 .barraLateral {
     color: #FFF6D4;
-    width: 22%;
+    width: 25%;
     background-color: #DAB368;
     padding: 0px 15px;
     border-right: 2px #633825 solid;
 }
 
 #botonContactar, #botonFormulario {
-    background-color: #79452C;
+    background-color: #36623C;
     border-radius: 15px;
-    border: #483228 solid 1px;
+    border: #F6DE83 solid 2px;
     color:#FCF3CF;
-    font-size: 20px;
+    font-size: 1.3em;
     padding: 5px;
     cursor: pointer;
-    margin-top: 5px;
-    width: 100%;
+    margin-top: 5px ;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
 }
 
 #botonContactar:hover, #botonFormulario:hover { background-color: #483228;}
@@ -134,7 +142,7 @@ a:hover { background-color: #79452C;}
     columns: 2;
 }
 
-input {
+input, textarea {
     width: 100%;
 }
 
@@ -145,12 +153,7 @@ figcaption {
   color: #36623C;
 }
 
-#ingles:hover > figcaption {
+#ingles:hover > figcaption, #aleman:hover > figcaption {
   display:block;
   transition: all .5s;
   }
-
-#aleman:hover > figcaption {
-    display:block;
-    transition: all .5s;
-    }
